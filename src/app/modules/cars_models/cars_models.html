@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Car Models
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-row>
+    <ion-col width-6>
+      <b>CODICE</b>
+    </ion-col>
+    <ion-col width-6>
+      <b>NOME</b>
+    </ion-col>
+  </ion-row>
+  <ion-row *ngFor="let brand of (carBrands$ | async)">
+    <ion-col width-6>{{brand.codigo}}</ion-col>
+    <ion-col width-6>{{brand.nome}}</ion-col>
+  </ion-row>
+</ion-content>

@@ -14,6 +14,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { TabsModule } from './modules/tabs/tabs.module';
 import { ToDoModule } from './modules/todo/todo.module';
 import { CarBrandsModule } from './modules/cars/cars.module';
+import { CarModelsModule } from './modules/cars_models/cars_models.module';
 
 @NgModule({
   declarations: [MyApp],
@@ -22,6 +23,7 @@ import { CarBrandsModule } from './modules/cars/cars.module';
     TabsModule,
     ToDoModule,
     CarBrandsModule,
+    CarModelsModule,
     BrowserModule,
     IonicModule.forRoot(MyApp),
     StoreModule.forRoot({}),
